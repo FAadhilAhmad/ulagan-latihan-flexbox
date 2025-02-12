@@ -5,13 +5,15 @@ html body{
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
 }
 
 /* latihan satu */
 .container-satu{
     width: 800px;
     margin: 50px auto;
-    display: flex;
+    /* display: flex; */
     background-color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -21,7 +23,7 @@ body{
     order: 2;
 }
 .sidebar2{
-    flex: 1;
+    flex: 2;
     order: 3;
 }
 .sidebar1{
@@ -32,17 +34,14 @@ body{
 
 /* ltihan dua */
 .container-dua{
-    width: 800px;
+    max-width: 800px;
     margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+   
 }
 .portofolio{
-    text-align: center;
-    margin: 20px;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .portofolio.satu{
@@ -59,21 +58,50 @@ body{
 
 /* latihan ke tiga */
 .container-tiga{
-    width: 800px;
+    max-width: 800px;
     margin: 50px auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
+}
+.thubnail{
+    max-width: 30%;
 }
 .thubnail img{
     width: 100%;
 }
 /* latihan ke tiga selesai */
+
+/* latihan empat */
 .container-empat{
     width: 800px;
     margin: 50px auto;
     display: flex;
 }
 .card {
-    height: 100px;
-    border: 1px solid;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.header{
+    height: 150px;
+    background-color: rgb(142, 142, 250);
+}
+
+@media( min-width: 600px){
+    .container-satu{
+        display: flex;
+    }
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+    .portofolio{
+        width: 30%;
+    }
+    .thubnail{
+        width: 30%;
+    }
 }
